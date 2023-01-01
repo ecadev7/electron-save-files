@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App 1</title>
+    <link rel="stylesheet" type="text/css" href="https://dtd6jl0d42sve.cloudfront.net/lib/jquery/jquery-ui-1.13.2.min.css"/>
+    <style>
+        body {
+            margin: 40px 100px;
+        }
+    </style>
+    
+    <script type="text/javascript" src="https://dtd6jl0d42sve.cloudfront.net/lib/jquery/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="https://dtd6jl0d42sve.cloudfront.net/lib/jquery/jquery-ui-1.13.2.min.js"></script>
+</head>
+<body>
+
+    <h1>electron app 1</h1>
+    <p>contextIsolation: true</p>
+    <div>
+        <h2>file</h2>
+        <form action="">
+            <textarea name="myText" id="myText" cols="20" rows="5"></textarea>
+            <br />
+            <button id="myButton" type="submit">save</button>
+        </form>    
+    </div>
+
+    <div>
+        <h2>blob</h2>
+        <button id="myButtonRecord" type="submit">save</button>
+    </div>
+    
+    <div>
+        <h2>jquery</h2>
+    
+        <button id="opener">dialog</button>
+        <div id="dialog" title="Basic dialog">
+            <p>This is the default dialog which is useful for displaying information. The dialog window can be moved,
+                resized and closed with the &apos;x&apos; icon.</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="renderer.js"></script>
+</body>
+</html>
